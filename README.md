@@ -1,6 +1,10 @@
 # sso-example
 
-a [Sails](https://sailsjs.com) application
+> #### Note
+> As of Oct 21, 2017, this is a work in progress.
+> It is not ready to use yet!
+
+An example [Sails](https://sailsjs.com) application demonstrating SSO (single sign-on) with technologies like SAML.
 
 
 ### Links
