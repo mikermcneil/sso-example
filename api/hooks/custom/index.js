@@ -2,9 +2,7 @@
  * Module dependencies
  */
 
-
-
-
+ // N/A
 
 /**
  * custom hook
@@ -14,7 +12,6 @@
  */
 
 module.exports = function defineCustomHook(sails) {
-
   return {
 
     /**
@@ -24,7 +21,7 @@ module.exports = function defineCustomHook(sails) {
      */
     initialize: function (done) {
 
-      sails.log.debug('Initializing custom hook (`app`)');
+      sails.log.debug('Initializing custom hook (`custom`)');
 
       // FUTURE: avoid this self-calling function by making Sails core support async functions for `initialize()`
       // (still would need to call `done()` though, for consistency w/ bootstrap, etc)
@@ -140,7 +137,7 @@ module.exports = function defineCustomHook(sails) {
 
             }//ﬁ
 
-            // Prevent the browser from caching dynamic pages.
+            // Prevent the browser from caching logged-in users' pages.
             //
             // > (including w/ the Chrome back button)
             // > See https://mixmax.com/blog/chrome-back-button-cache-no-store
@@ -153,9 +150,7 @@ module.exports = function defineCustomHook(sails) {
           }
         }
       }
-    }
-
+    }//</routes>
 
   };
-
 };
