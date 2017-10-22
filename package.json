@@ -11,7 +11,8 @@
     "sails-hook-sockets": "^1.4.0",
     "connect-redis": "3.2.0",
     "socket.io-redis": "4.0.0",
-    "@sailshq/lodash": "^3.10.2"
+    "@sailshq/lodash": "^3.10.2",
+    "sails-stdlib": "^0.8.0-6"
   },
   "devDependencies": {
     "eslint": "3.19.0",

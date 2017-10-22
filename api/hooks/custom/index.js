@@ -2,7 +2,8 @@
  * Module dependencies
  */
 
- // N/A
+var stdlib = require('sails-stdlib');
+
 
 /**
  * custom hook
@@ -26,6 +27,9 @@ module.exports = function defineCustomHook(sails) {
       // FUTURE: avoid this self-calling function by making Sails core support async functions for `initialize()`
       // (still would need to call `done()` though, for consistency w/ bootstrap, etc)
       (async ()=>{
+
+        // Expose `sails.stdlib` for convenience.
+        sails.stdlib = stdlib;
 
         // ... Any other app-specific setup code that needs to run on lift,
         // even in production, goes here ...
